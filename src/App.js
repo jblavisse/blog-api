@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 
-import Post from "./Post";
+import PostList from "./PostList";
 
 
 class App extends Component {
@@ -11,7 +11,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Post />
+        <PostList/>
       </div>
     );
   }
