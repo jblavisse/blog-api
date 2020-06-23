@@ -6,7 +6,7 @@ import "./PostList.css";
 
 class PostList extends Component {
     state = {
-        posts: null
+        posts: []
       }
 
     componentDidMount() {
@@ -20,13 +20,9 @@ class PostList extends Component {
 
     render() { 
 
-        let postsListEl;
-        
-        if(this.state.posts) {
-            postsListEl = this.state.posts.map(post => {
+        let postsListEl = this.state.posts.map(post => {
                 return <Post post={post} />
-            })
-        }
+        })
 
         return ( 
         <div className="posts">
